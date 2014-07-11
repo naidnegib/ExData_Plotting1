@@ -5,8 +5,8 @@
 #
 #
 # Personal testing on Windows:
-setwd("D:/Personal/R-examiningData/exploratory-assignment1")
-#Sys.setlocale("LC_TIME","English_United States.1252")   #Set the locale for printing of Date
+# setwd("D:/Personal/R-examiningData/exploratory-assignment1")
+# Sys.setlocale("LC_TIME","English_United States.1252")   #Set the locale for printing of Date
 
 myFile <- "./household_power_consumption.txt"
 
