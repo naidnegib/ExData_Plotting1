@@ -37,7 +37,7 @@ dfData$Global_reactive_power <- as.numeric(as.character(dfData$Global_reactive_p
 dfData$Voltage <- as.numeric(as.character(dfData$Voltage))
 
 # Create the chart and save it to a png file
-png(filename="plot3.png", width=480, height=480)
+png(filename="plot4.png", width=480, height=480)
 
 # Define a layout for 2x2 charts
 par(mfrow = c(2,2))
@@ -56,7 +56,7 @@ with(dfData, {
   plot(datetime, Sub_metering_1, type="l", xlab="", ylab="Energy sub metering", col="black")
   points(datetime, Sub_metering_2, type="l", col="red")
   points(datetime, Sub_metering_3, type="l", col="blue")
-  legend("topright", pch ="", lty=c(1,1,1), col=c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  legend("topright", box.lty=0, inset=0.01, pch ="", lty=c(1,1,1), col=c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   
   # Plot (2,2)
   
